@@ -27,7 +27,7 @@ const search = ({
         region: matchArray[6]
       });
     }
-    resolve(dataResult);
+    if (dataResult.length !== 0) resolve(dataResult);
   }).catch(error => console.warn(error));
 });
 
